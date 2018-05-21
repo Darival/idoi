@@ -1,22 +1,35 @@
 @import '../../source/sass/common/config';
 
 .footer {
-  padding: 1em 0;
-  background: $color-white;
-  color: $color-4;
+  margin-top: -100px;
+  z-index: 2;
+  color: $color-3;
   bottom: auto;
   left: 0px;
   width: 100%;
   position: absolute;
   font-family: 'Open Sans', sans-serif;
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 0;
   grid-template-rows: auto;
   grid-template-columns: 1fr auto 1fr; 
-  grid-template-areas: ". info ." /* ". map ." */;
+  grid-template-areas: "triangle-left triangle-right triangle-right"
+                      "info info info" /* ". map ." */;
   a {
     text-decoration: none;
     color: inherit;
+  }
+  .triangle-left {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid $color-4;
+    border-right: 20vw solid transparent;
+  }
+  .triangle-right {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid $color-4;
+    border-left: 80vw solid transparent;
   }
    ul {
     list-style: none;
@@ -29,6 +42,7 @@
 }
 
 .footer-info {
+  background-color: $color-4;
   display: flex;
   flex-flow: column;
   align-items: center;

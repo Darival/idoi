@@ -7,23 +7,13 @@
     width: 100vw;
     p {
         line-height: 2em;
-        padding: 0 10%;
-    }
-
-    div.line {
-        content: '';
-        height: 25px;
-        width: 2px;
-        background: $color-2;
-        display: inline-block;
-        text-align: center;
-        margin: 15px 0 20px 0;
+        padding: 0 10% 100px 10%;
     }
 
 
     @media (min-width: 850px) {
         p {
-            padding: 0 25%;
+            padding: 0 25% 100px 25%;
         }
     }
 }

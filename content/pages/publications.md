@@ -1,5 +1,5 @@
 ---
-$title: Publications
+$title: Publicaciones
 $order: 2
 description: Learn about us.
 ---

@@ -1,5 +1,5 @@
 ---
-$title: Treatments
+$title: Tratamientos
 $order: 3
 description: Learn about us.
 ---

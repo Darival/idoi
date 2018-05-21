@@ -23,7 +23,19 @@ body {
   box-sizing: border-box;
   margin: 0;
   max-width: $contained-width;
-  padding: 80px 0;
+  padding-top: 80px;
+}
+
+
+
+div.line {
+  content: '';
+  height: 25px;
+  width: 2px;
+  background: $color-2;
+  display: inline-block;
+  text-align: center;
+  margin: 15px 0 20px 0;
 }
 
 @import '../common/button';
@@ -32,3 +44,4 @@ body {
 @import '../../../partials/hero/hero';
 @import '../../../partials/why/why';
 @import '../../../partials/footer/footer';
+@import '../../../partials/about/about';

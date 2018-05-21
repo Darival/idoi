@@ -1,0 +1,10 @@
+$title: Nosotros
+$order: 1
+description: Learn about us.
+
+composite_files:
+- about
+
+partials:
+- partial: about
+  title@: About
