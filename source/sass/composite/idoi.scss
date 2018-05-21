@@ -3,7 +3,7 @@
 body {
   background: $color-bg;
   margin: 0;
-  color: $color-text;
+  color: $color-2;
   font-family: $font-family;
   line-height: $line-height;
   -webkit-font-smoothing: antialiased;
@@ -11,16 +11,24 @@ body {
   a {
     color: $color-1;
   }
+  h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    color: $color-1;
+    letter-spacing: 2px;
+  }
 }
 
 .wrapper {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   max-width: $contained-width;
-  padding: $padding;
+  padding: 80px 0;
 }
 
 @import '../common/button';
 @import '../common/modifiers';
 @import '../../../partials/header/header';
+@import '../../../partials/hero/hero';
+@import '../../../partials/why/why';
 @import '../../../partials/footer/footer';

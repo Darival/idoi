@@ -1,0 +1,30 @@
+.hero {
+    background-image: url("static/images/hero/hero.jpg");
+    
+    /* Set a specific height */
+    height: 70vh;
+    width: 100vw;
+    
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-gap: 1em;
+    place-content: center;
+}
+.hero-text {
+    color: $color-3;
+    padding: 1em;
+    text-align: center;
+    line-height: normal;
+    background: rgba(34, 51, 59, .9);
+}
+
+.hero-apply {
+    background: $color-1;
+    color: $color-white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+}

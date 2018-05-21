@@ -5,3 +5,9 @@ description: A basic Grow demo website.
 
 composite_files:
 - home
+
+partials:
+- partial: hero
+  title@: My hero
+- partial: why
+  title@: Why Us

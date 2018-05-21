@@ -2,12 +2,13 @@
 
 .header {
   background: $color-white;
-  //box-shadow: $shadow;
+  box-shadow: $shadow;
   color: $color-2;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 999;
   a {
     text-decoration: none;
     color: inherit;
@@ -27,6 +28,7 @@
   }
 
   .title {
+    letter-spacing: 0;
     justify-self: start;
     line-height: normal;
     font-weight: 500;
@@ -59,7 +61,6 @@
         border-bottom: 2px solid transparent;
         display: inline-block;
         margin: 0 $padding / 2 0 0;
-  
         a {
           display: inline-block;
           padding: $padding / 4 0;

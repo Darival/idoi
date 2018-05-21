@@ -1,37 +1,40 @@
 <div class="footer">
-  <amp-img alt="A beautiful sunset"
-    src="/static/images/suaj.png"
-    width="60"
-    height="60">
-  </amp-img>
-  <ul>
-    {% if podspec.meta.social.facebook %}
-    <li class="">
-      <a href="https://www.facebook.com/{{podspec.meta.social.facebook}}/">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-    </li>
-    {% endif %}
-    {% if podspec.meta.social.youtube %}
-    <li class="">
-      <a href="https://www.youtube.com/channel/{{podspec.meta.social.youtube}}/">
-        <i class="fab fa-youtube"></i>
-      </a>
-    </li>
-    {% endif %}
-    {% if podspec.meta.social.instagram %}
-    <li class="">
-      <a href="https://www.instagram.com/{{podspec.meta.social.instagram}}/">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </li>
-    {% endif %}
-  </ul>
-  <div class="address">
-    <i class="fas fa-map-marker"></i>
-    <span>Cerro del Topo 853, Obispado, 64060 Monterrey, N.L. <br>
-        Instituto de Oncología Intervencionista 2017
-    </span>
+
+  <div class="footer-info">
+    <amp-img alt="A beautiful sunset" src="/static/images/suaj.png" width="60" height="60">
+    </amp-img>
+    <ul>
+      {% if podspec.meta.social.facebook %}
+      <li class="">
+        <a href="https://www.facebook.com/{{podspec.meta.social.facebook}}/">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      {% endif %} {% if podspec.meta.social.youtube %}
+      <li class="">
+        <a href="https://www.youtube.com/channel/{{podspec.meta.social.youtube}}/">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </li>
+      {% endif %} {% if podspec.meta.social.instagram %}
+      <li class="">
+        <a href="https://www.instagram.com/{{podspec.meta.social.instagram}}/">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+    <a href="mailto:info@idoimexico.com">
+      <i class="far fa-envelope"></i>&nbsp;info@idoimexico.com</a>
+    <div class="address">
+      <i class="fas fa-map-marker"></i>
+      <span>Cerro del Topo 853, Obispado, 64060 Monterrey, N.L.
+        <br> Instituto de Oncología Intervencionista 2017
+      </span>
+    </div>
   </div>
-  <a href="mailto:info@idoimexico.com"><i class="far fa-envelope"></i>&nbsp;info@idoimexico.com</a>
+
+  <!-- <amp-iframe class="footer-map" width="700" title="Google map pin on Googleplex, Mountain View CA" height="300" layout="responsive" sandbox="allow-scripts allow-same-origin allow-popups"
+    frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJf6Cq2QG-YoYRRjOelX88Hfs&key=AIzaSyAdYDVKLTh9c5yZ5z8Gyxxl90vMq9h8fkk">
+  </amp-iframe> -->
 </div>
