@@ -1,0 +1,44 @@
+@import '../../source/sass/common/config';
+
+.footer {
+  background: $color-white;
+  color: $color-4;
+  bottom: auto;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  height: 227px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+   ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    li {
+      margin: 0 1em;
+    }
+   }
+}
+
+.address {
+  margin: .5em;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: minmax(20px, 1fr) auto;
+  grid-template-areas: "icon adress" "icon address";
+  padding-bottom: 1em;
+  i {
+    grid-area: icon;
+    align-self: center;
+  }
+  span {
+    grid-area: address;
+  }
+}

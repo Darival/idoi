@@ -1,0 +1,9 @@
+<nav>
+    <ul>
+        {% for item in g.docs('pages') %}
+        <li class="{{"active" if doc == item}}">
+            <a href="{{item.url.path}}">{{item.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

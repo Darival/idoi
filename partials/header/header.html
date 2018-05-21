@@ -1,12 +1,19 @@
 <div class="header">
-  <h1><a href="{{podspec.home.url}}">{{podspec.title}}</a></h1>
-  <div class="nav">
-    <ul class="nav__items">
-      {% for item in g.docs('pages') %}
-      <li class="nav__items__item {{"nav__items__item--active" if doc == item}}">
-          <a href="{{item.url.path}}">{{item.title}}</a>
-        </li>
-      {% endfor %}
-    </ul>
+  <div class="container">
+    <a class="hamburger" on='tap:sidebar1.toggle'>
+      <i class="fas fa-bars"></i>
+    </a>
+    <amp-img alt="logo"
+      class="logo"
+      src="{{ podspec.meta.favicon_path }}"
+      width="70"
+      height="70"></amp-img>
+    <h1 class="title">
+      <a href="{{podspec.home.url}}">{{podspec.title}}</a>
+    </h1>
+    {% include "/partials/header/nav.html" %}
   </div>
 </div>
+<amp-sidebar class="sidebar" id="sidebar1" layout="nodisplay" side="left">
+  {% include "/partials/header/nav.html" %}
+</amp-sidebar>

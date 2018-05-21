@@ -1,16 +1,37 @@
 <div class="footer">
-  <div class="nav">
-    <ul class="nav__items">
-      {% if podspec.meta.social.facebook %}
-      <li class="nav__items__item">
-        <a href="https://www.facebook.com/{{podspec.meta.social.facebook}}/">Facebook</a>
-      </li>
-      {% endif %}
-      {% if podspec.meta.social.twitter %}
-      <li class="nav__items__item">
-        <a href="https://www.twitter.com/{{podspec.meta.social.twitter}}/">Twitter</a>
-      </li>
-      {% endif %}
-    </ul>
+  <amp-img alt="A beautiful sunset"
+    src="/static/images/suaj.png"
+    width="60"
+    height="60">
+  </amp-img>
+  <ul>
+    {% if podspec.meta.social.facebook %}
+    <li class="">
+      <a href="https://www.facebook.com/{{podspec.meta.social.facebook}}/">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% if podspec.meta.social.youtube %}
+    <li class="">
+      <a href="https://www.youtube.com/channel/{{podspec.meta.social.youtube}}/">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% if podspec.meta.social.instagram %}
+    <li class="">
+      <a href="https://www.instagram.com/{{podspec.meta.social.instagram}}/">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+  <div class="address">
+    <i class="fas fa-map-marker"></i>
+    <span>Cerro del Topo 853, Obispado, 64060 Monterrey, N.L. <br>
+        Instituto de Oncología Intervencionista 2017
+    </span>
   </div>
+  <a href="mailto:info@idoimexico.com"><i class="far fa-envelope"></i>&nbsp;info@idoimexico.com</a>
 </div>

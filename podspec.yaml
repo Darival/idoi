@@ -1,20 +1,22 @@
 grow_version: ">=0.2.5"
 
-title: "Site Title"
+title: "Instituto De Oncología Intervencionista"
 
 home: /content/pages/home.yaml
 
 localization:
-  default_locale: en
+  default_locale: es
 
 meta:
   google_analytics_id: ""
   google_site_verification: ""
   image_path: ""
   favicon_path: /static/images/favicon.png
+  logo_path: /static/images/logo.png
   social:
-    twitter: example
-    facebook: example
+    youtube: UChW_-RvPlRiQuIx0L-rVYcg
+    facebook: idoimexico
+    instagram: idoimexico
 
 preprocessors:
 - kind: gulp
@@ -25,9 +27,6 @@ static_dirs:
   serve_at: /static/
 - static_dir: /dist/css/
   serve_at: /css/
-  fingerprinted: true
-- static_dir: /dist/js/
-  serve_at: /js/
   fingerprinted: true
 
 sitemap:
