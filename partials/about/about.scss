@@ -28,7 +28,7 @@
     grid-template-areas: ". mission ." ". vision .";
     grid-row-gap: 2em;
     line-height: 2em;
-    background-color: $color-2;
+    background-color: $color-4;
     padding: 3em 10%;
     h1 {
         color: $color-3;
@@ -78,6 +78,43 @@
 }
 
 
+.team {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 2fr 1fr 2fr;
+    text-align: center;
+    line-height: normal;
+    .team-picture {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: 100%;
+        height: auto;
+    }
+    .team-card {
+        z-index: 1;
+        background-color: rgba($color-4, .8);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        display: flex;
+        line-height: 2em;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        color: $color-3;
+        .line {
+            background-color: $color-3;;
+        }
+        p {
+            padding: 0 10% 100px 10%;
+        }
+    }
+}
+
+
 
 @media (min-width: 910px) {
     .about-banner {
@@ -92,6 +129,26 @@
     .origen {
         grid-template-columns: 1fr 1fr; 
         grid-template-areas: "girl origen" "girl origen";
+    }
+
+    .team {
+        margin: 2em 0;
+        padding: 0 10%;
+        display: grid;
+        grid-template-columns: 1fr 5vw 1fr;
+        grid-template-rows: 1fr 4fr 1fr;
+        .team-picture {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .team-card {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
     }
 
 
