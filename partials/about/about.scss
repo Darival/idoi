@@ -93,25 +93,43 @@
         height: auto;
     }
     .team-card {
-        z-index: 1;
-        background-color: rgba($color-4, .8);
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 4;
-        display: flex;
-        line-height: 2em;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-        color: $color-3;
+        z-index: 1;
         .line {
             background-color: $color-3;;
         }
         p {
             padding: 0 10% 100px 10%;
         }
+        .card {
+            display: flex;
+            line-height: 2em;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            color: $color-3;
+            background-color: rgba($color-4, .8);
+        }
     }
+}
+
+.doctors {
+    display: flex;
+    .dr_card {
+        width: 50%;
+        .portrait {
+            max-width: 300px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        h1 {
+            text-align: center;
+        }
+    }
+    margin-bottom: 100px;
 }
 
 
