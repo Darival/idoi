@@ -9,14 +9,14 @@
     background-size: cover;
     padding: 10vh 0%;
     display: grid;
-    color: $color-3;
+    color: $color-2;
     text-align: center;
     line-height: normal;
     .card {
         padding: 2em 10%;
-        background-color: rgba($color-4, .9);
+        background-color: rgba($color-3, .9);
         h1 {
-            color: $color-3;
+            color: $color-2;
         }
     }
 }
@@ -28,19 +28,17 @@
     grid-template-areas: ". mission ." ". vision .";
     grid-row-gap: 2em;
     line-height: 2em;
-    background-color: $color-4;
+    background-color: $color-1;
     padding: 3em 10%;
+    font-size: 1.3em;
     h1 {
-        color: $color-3;
-    }
-    p {
-        color: $color-white;
+        color: $color-2;
     }
     .mission {
         grid-area: mission;
         border-left: solid;
         border-left-width: 2px;
-        border-left-color: $color-3;
+        border-left-color: $color-2;
         padding-left: 1em;
     }
 
@@ -48,7 +46,7 @@
         grid-area: vision;
         border-right: solid;
         border-right-width: 2px;
-        border-right-color: $color-3;
+        border-right-color: $color-2;
         padding-right: 1em;
     }
 }
@@ -81,9 +79,10 @@
 .team {
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-rows: 3fr 2fr 1fr;
     text-align: center;
     line-height: normal;
+    margin-bottom: 50px;
     .team-picture {
         grid-column-start: 1;
         grid-column-end: 6;
@@ -117,19 +116,24 @@
 }
 
 .doctors {
-    display: flex;
     .dr_card {
-        width: 50%;
+        line-height: normal;
+        margin-bottom: 100px; 
         .portrait {
-            max-width: 300px;
-            margin: 0 auto;
-            border-radius: 50%;
+            padding: 0 1em;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            .picture {
+                width: 300px;
+                border-radius: 50%;
+            }
         }
-        h1 {
-            text-align: center;
+        .description {
+            padding: 0 10%;
         }
     }
-    margin-bottom: 100px;
 }
 
 
@@ -140,6 +144,9 @@
         .card {
             padding: 2em 4em;
         }
+    }
+    .doctors {
+        padding: 0 10%;
     }
 }
 
@@ -185,5 +192,36 @@
 
     .about-banner {
         padding: 10vh 20%;
+    }
+
+
+    .doctors {
+        .dr_card {
+            display: grid;
+            grid-template-rows: auto;
+            &.left {
+                grid-template-columns: 1fr 2fr; 
+                .portrait {
+                    grid-column: 1 / 2;
+                }
+                .description {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                }
+            }
+            &.right {
+                grid-template-columns: 2fr 1fr; 
+                .portrait {
+                    grid-column: 2 / 3;
+                }
+                .description {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                }
+            }
+            h1 {
+                text-align: center;
+            }
+        }
     }
 }

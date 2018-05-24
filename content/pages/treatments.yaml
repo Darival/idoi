@@ -1,0 +1,10 @@
+$title: Treatments
+$order: 3
+description: Treatments.
+
+composite_files:
+- treatments
+
+partials:
+- partial: treatments
+  title@: About

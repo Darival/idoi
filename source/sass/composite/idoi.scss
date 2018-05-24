@@ -22,7 +22,6 @@ body {
 .wrapper {
   box-sizing: border-box;
   margin: 0;
-  max-width: $contained-width;
   padding-top: 80px;
 }
 
@@ -45,3 +44,4 @@ div.line {
 @import '../../../partials/why/why';
 @import '../../../partials/footer/footer';
 @import '../../../partials/about/about';
+@import '../../../partials/treatments/treatments';
