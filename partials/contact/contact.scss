@@ -1,0 +1,70 @@
+.contact {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    .map {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+    }
+    .contact-card {
+        form {
+            height: auto;
+            padding: 2em 10% 100px 10%;
+            background-color: rgba($color-2,.85);
+            display: flex;
+            flex-flow: column;
+        }
+    }
+    @media (min-width: 910px) {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        .contact-card {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            z-index: 1;
+            form {
+                padding-bottom: 2em;
+            }
+        }
+    }
+    @media (min-width: 1410px) {
+    }
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    background: rgba(255,255,255,.1);
+    border: none;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    &:focus {
+        background: #d2d9dd;
+    }
+}
+
+button {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: $color-1;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid $color-2;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}

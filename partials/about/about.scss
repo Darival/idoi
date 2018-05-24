@@ -78,24 +78,16 @@
 
 .team {
     display: grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     text-align: center;
     line-height: normal;
     margin-bottom: 50px;
     .team-picture {
-        grid-column-start: 1;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 3;
         width: 100%;
         height: auto;
     }
     .team-card {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 4;
         z-index: 1;
         .line {
             background-color: $color-3;;
@@ -147,6 +139,24 @@
     }
     .doctors {
         padding: 0 10%;
+    }
+
+    .team {
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 3fr 2fr 1fr;
+        .team-picture {
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .team-card {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            z-index: 1;
+        }
     }
 }
 

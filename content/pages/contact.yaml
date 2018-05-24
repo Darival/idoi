@@ -1,0 +1,10 @@
+$title: Contacto
+$order: 4
+description: Learn about us.
+
+composite_files:
+- about
+
+partials:
+- partial: contact
+  title@: Contact

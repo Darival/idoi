@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    margin-bottom: 100px;
 
     .banner {
         text-align: center;
@@ -37,5 +38,4 @@
     
     @media (min-width: 1410px) {
     }
-    margin-bottom: 100px;
 }
