@@ -1,0 +1,10 @@
+$title: Publicaciones
+$order: 3
+description: publications.
+
+composite_files:
+- publications
+
+partials:
+- partial: publications
+  title@: publications
