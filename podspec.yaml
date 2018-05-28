@@ -31,3 +31,8 @@ static_dirs:
 
 sitemap:
   enabled: true
+
+deployments:
+  default:
+    destination: local
+    out_dir: /home/darival/Code/idoiDeploy
