@@ -1,14 +1,13 @@
 .contact {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 300px;
+    grid-template-rows: auto 500px;
     .contact-card {
         height: auto;
         padding: 2em 10% 100px 10%;
-        background-color: rgba($color-4,.9);
+        background-color: $color-4;
         display: flex;
         flex-flow: column;
-        justify-content: center;
     }
 
     .map {
@@ -16,7 +15,7 @@
     }
 
     @media (min-width: 910px) {
-        grid-template-columns: minmmax(2fr, 700px) 1fr ;
+        grid-template-columns: 2fr 1fr ;
         grid-template-rows: auto;
         .contact-card {
             grid-column: 2 / 3;

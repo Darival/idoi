@@ -58,8 +58,10 @@
                             "origen origen origen";
     .girl {
         grid-area: girl;
+        align-self: center;
     }
     .origen-paragraph {
+        padding-top: 2rem;
         grid-area: origen;
         display: flex;
         flex-flow: column;
