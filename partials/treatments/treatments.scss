@@ -4,10 +4,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin-bottom: 100px;
-    h2 {
-        margin: 3em 0 1em 0;
-    }
     .text {
+        h1 {
+            margin: 3em 0 1em 0;
+        }
         display: grid;
         place-content: center;
         padding: 0 10%;
@@ -21,8 +21,14 @@
     }
 
     @media (min-width: 910px) {
+        .text {
+            padding: 0 15%;
+        }
     }
     
     @media (min-width: 1410px) {
+        .text {
+            padding: 0 20%;
+        }
     }
 }
