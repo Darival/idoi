@@ -10,7 +10,7 @@
     background-size: cover;
     padding: 10vh 0%;
     display: grid;
-    color: $color-2;
+    color: $color-white;
     .card {
         padding: 2em 10%;
         background-color: rgba($color-3, .9);
@@ -96,7 +96,7 @@
             flex-flow: column;
             align-items: center;
             justify-content: center;
-            color: $color-3;
+            color: $color-white;
             background-color: rgba($color-4, .8);
         }
     }
