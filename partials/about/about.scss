@@ -12,7 +12,7 @@
     display: grid;
     color: $color-white;
     .card {
-        padding: 2em 10%;
+        padding: 2em 5%;
         background-color: rgba($color-3, .9);
         h1 {
             text-align: center;
@@ -28,7 +28,7 @@
     grid-template-areas: ". mission ." ". vision .";
     grid-row-gap: 2em;
     background-color: $color-1;
-    padding: 3em 10%;
+    padding: 3em 5%;
     font-size: 1em;
     h1 {
         color: $color-2;
@@ -68,7 +68,7 @@
         align-items: center;
         justify-content: center;
         p {
-            padding: 0 10% 100px 10%;
+            padding: 0 5% 100px 5%;
         }
     }
 }
@@ -89,7 +89,7 @@
             background-color: $color-3;;
         }
         p {
-            padding: 0 10% 100px 10%;
+            padding: 0 5% 100px 5%;
         }
         .card {
             display: flex;
@@ -117,7 +117,7 @@
             }
         }
         .description {
-            padding: 0 10%;
+            padding: 0 5%;
         }
     }
 }
