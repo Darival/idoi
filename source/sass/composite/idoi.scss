@@ -19,6 +19,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 100;
     color: $color-1;
+    line-height: normal;
     letter-spacing: 2px;
   }
 }
@@ -53,6 +54,13 @@ div.line {
       margin:0;
   }
   grid-column:  1 / -1; 
+}
+
+@font-face {
+  font-family: 'Antipasto Pro Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/static/AntipastoPro-Medium_trial.ttf') format('truetype');
 }
 
 @import '../common/button';

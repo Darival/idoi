@@ -3,13 +3,14 @@
     <a class="hamburger" on='tap:sidebar1.toggle'>
       <i class="fas fa-bars"></i>
     </a>
-    <amp-img alt="logo"
-      class="logo"
-      src="{{ podspec.meta.logo_path }}"
-      width="61"
-      height="61"></amp-img>
+    <a href="/" class="logo">
+      <amp-img alt="logo"
+        src="{{ podspec.meta.logo_path }}"
+        width="61"
+        height="61"></amp-img>
+    </a>
     <h1 class="title">
-      <a href="{{podspec.home.url}}">{{podspec.title}}</a>
+      <a href="/">{{podspec.title}}</a>
     </h1>
     {% include "/partials/header/nav.html" %}
   </div>
