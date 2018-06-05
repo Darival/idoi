@@ -15,9 +15,17 @@
     {% include "/partials/header/nav.html" %}
     <a class="localization"
     {% if doc.locale == 'en' %}
-        href="/es/{{doc.base}}"
+      {% if doc.base == 'home' %}
+          href="/"
+      {% else %}
+        href="/{{doc.base}}"
+      {% endif %}
     {% else %}
+      {% if doc.base == 'home' %}
+          href="/en/"
+      {% else %}
         href="/en/{{doc.base}}"
+      {% endif %}
     {% endif %}
     >
         <i class="fas fa-language"></i>
