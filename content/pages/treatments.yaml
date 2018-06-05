@@ -1,4 +1,4 @@
-$title: Tratamientos
+$title@: Tratamientos
 $order: 3
 description: Treatments.
 
@@ -7,4 +7,3 @@ composite_files:
 
 partials:
 - partial: treatments
-  title@: About

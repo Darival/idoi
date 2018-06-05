@@ -3,16 +3,26 @@
     <a class="hamburger" on='tap:sidebar1.toggle'>
       <i class="fas fa-bars"></i>
     </a>
-    <a href="/" class="logo">
+    <a href="{{g.doc('/content/pages/home.yaml', locale=doc.locale).url.path}}" class="logo">
       <amp-img alt="logo"
         src="{{ podspec.meta.logo_path }}"
         width="61"
         height="61"></amp-img>
     </a>
     <h1 class="title">
-      <a href="/">{{podspec.title}}</a>
+      <a href="{{g.doc('/content/pages/home.yaml', locale=doc.locale).url.path}}">{{podspec.title}}</a>
     </h1>
     {% include "/partials/header/nav.html" %}
+    <a class="localization"
+    {% if doc.locale == 'en' %}
+        href="/es/{{doc.base}}"
+    {% else %}
+        href="/en/{{doc.base}}"
+    {% endif %}
+    >
+        <i class="fas fa-language"></i>
+        <span>&nbsp;{{doc.locale}}</span>
+    </a>
   </div>
 </div>
 <amp-sidebar class="sidebar" id="sidebar1" layout="nodisplay" side="left">

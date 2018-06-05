@@ -1,4 +1,4 @@
-$title: Contacto
+$title@: Contacto
 $order: 4
 description: Learn about us.
 
@@ -7,4 +7,3 @@ composite_files:
 
 partials:
 - partial: contact
-  title@: Contact

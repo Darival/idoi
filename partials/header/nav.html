@@ -2,7 +2,7 @@
     <ul>
         {% for item in g.docs('pages') %}
         <li class="{{"active" if doc == item}}">
-            <a href="{{item.url.path}}">{{item.title}}</a>
+            <a href="{{item.url.path}}">{{_(item.title)}}</a>
         </li>
         {% endfor %}
     </ul>

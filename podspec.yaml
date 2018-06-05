@@ -6,6 +6,9 @@ home: /content/pages/home.yaml
 
 localization:
   default_locale: es
+  locales:
+  - es
+  - en
 
 meta:
   google_analytics_id: ""

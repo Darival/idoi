@@ -1,6 +1,6 @@
-$title: Inicio
-$path: /{root}/
+$title@: Inicio
 $order: -1
+
 description: A basic Grow demo website.
 
 composite_files:
@@ -8,6 +8,9 @@ composite_files:
 
 partials:
 - partial: hero
-  title@: My hero
+  slogan@: Alta especialidad en la que puedes confiar
+  welcome@: BIENVENIDO A IDOI
+  apply@: Aplicar al tratamiento
 - partial: why
-  title@: Why Us
+  title@: ¿Porqué nosotros?
+  content@: Atendemos casos aislados y complejos de diferentes tipos de cáncer que requieren medidas extraordinarias mediante técnicas altamente efectivas que no provocan deterioro del estado clínico e inmunológico. 
