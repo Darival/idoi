@@ -1,6 +1,11 @@
 $title@: Inicio
 $order: -1
 
+$path: /
+
+$localization:
+  path: /{locale}/
+
 description: A basic Grow demo website.
 
 composite_files:
