@@ -41,6 +41,22 @@ msgid ""
 "(radiculitis) que ocurre en menos del 1%%20 de los casos.</p><p>Todos los "
 "medicamentos que usa IDOI están aprobados por Cofepris y FDA.</p>"
 msgstr ""
+"<p>The intra-arterial treatment exists since long and is performed "
+"continuously in diverse countries. What IDOI does differently is the "
+"preparation, mixing, dosage and sequential administration of the different "
+"medications that integrates the treatment’s model. It also uses the "
+"intrathecal route to administer certain medication.</p><p>The interventional "
+"oncology that IDOI performs consists in a puncture made in the femoral artery"
+" through which a micro catheter is inserted and directed by fluoroscopy to "
+"the blood supply  site of the tumor.  The risks related with the procedure "
+"are minimal and imply the formation of a hematoma in the puncture site (less "
+"than 5%%20) and a possible vascular event such as a stroke (less than "
+"0.7%%20). The other part of the procedure consists in making a lumbar "
+"puncture after the intraarterial treatment with the application of "
+"medications. The inherent risks of this procedure are pain in the puncture "
+"site, the formation of a hematoma and some irritation of the cauda equina "
+"(radiculitis) that occurs in less than 1%%20 of the cases.</p><p>All "
+"medication used by IDOI are approved by Cofepris and FDA.</p>"
 
 #: /content/pages/about.yaml
 msgid ""
@@ -105,6 +121,19 @@ msgid ""
 "preguntas frecuentes para obtener información sobre transporte y opciones de "
 "alojamiento.</p>"
 msgstr ""
+"<p>Thank you for your interest in the program offered by IDOI.</p><p> As a "
+"first encounter, we ask you to fill an application request form through which"
+" we will evaluate your case as thoroughly as possible to decide whether we "
+"can help you or not. All candidates are carefully evaluated, this is why we "
+"ask you to complete the form to start your request process.  </p><span>*It is"
+" necessary to have a Google Account.</span><br><a href=\"#\">Link</a><p>After"
+" receiving your form and all the additional files that you wish to share with"
+" us, we will process the information and contact you as soon as a decision is"
+" made. The process generally takes a week, but it could take more time "
+"depending on the complexity of the case. </p><p>After admission</p><p>If you "
+"are admitted to our program, you will receive an appointment date and must "
+"start making travel arrangements. Please consult our Frequently Ask Questions"
+" section to obtain information about transport and accommodation options.</p>"
 
 #: /content/pages/about.yaml
 msgid ""
@@ -254,7 +283,7 @@ msgstr "Our Origin"
 
 #: /content/pages/treatments.yaml
 msgid "Oncología Intervencionista"
-msgstr ""
+msgstr "Interventional Oncology"
 
 #: /content/pages/publications.yaml
 msgid "Publicaciones"
@@ -271,7 +300,7 @@ msgstr ""
 
 #: /content/pages/treatments.yaml
 msgid "Solicitud de admisión al programa"
-msgstr ""
+msgstr "Request for admission to the program"
 
 #: /content/pages/treatments.yaml
 msgid "Tratamientos"
