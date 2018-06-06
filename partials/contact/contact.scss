@@ -8,6 +8,9 @@
         background-color: $color-4;
         display: flex;
         flex-flow: column;
+        form {
+            margin-bottom: 2em;
+        }
     }
 
     .map {
@@ -21,9 +24,6 @@
             grid-column: 2 / 3;
             z-index: 1;
             padding: 2em 10%;
-            form {
-                padding-bottom: 2em;
-            }
         }
         .map {
             grid-column: 1 / 2;
