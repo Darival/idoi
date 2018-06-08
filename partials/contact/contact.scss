@@ -1,7 +1,7 @@
 .contact {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 500px;
+    grid-template-rows: auto auto;
     .contact-card {
         height: auto;
         padding: 2em 10% 100px 10%;
@@ -14,7 +14,7 @@
     }
 
     .map {
-        grid-row: 2 / 3;
+        grid-row: 1 / 2;
     }
 
     @media (min-width: 910px) {
